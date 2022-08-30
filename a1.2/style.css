@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange: #ff7f00;
+    --blue: #0000ff;
+    --purple: #80007e;
+    --green: #d8da3d;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #979797;
+    --dark-gray: #383838;
+}
+
+body {
+    background-color: var(--green);
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.navbar {
+    min-width: 270px;
+}
+
+.navbar-ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 40px 40px 0 0;
+}
+
+.navbar-item {
+    background-color: var(--white);
+    color: var(--purple);
+    font-size: 18px;
+    padding: 5px 30px 5px 5px;
+    margin: 10px;
+    border-right: 15px solid var(--black);
+}
+
+.navbar-ul li:nth-child(even) {
+    border-color: var(--blue);
+}
+
+.navbar-ul li:nth-child(odd) {
+    border-color: var(--orange);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-content {
+    padding-bottom: 40px;
+    border-bottom: 1px dotted var(--purple);
+}
+
+.main-content h1 {
+    font-family: sans-serif;
+    color: var(--purple);
+    margin: 20px 0 30px 0;
+}
+
+.main-content p {
+    color: var(--purple);
+    margin: 7px 0;
+    font-size: 18px;
+}
+
+.ellipsis-content-wrapper {
+    width: 915px;
+    overflow: hidden;
+}
+
+.ellipsis-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content-footer {
+    margin-top: 20px;
+}
+
+.common-footer  {
+    width: 1000px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.content-footer-1 {
+    color: var(--dark-gray);
+    border: 2px dashed var(--black);
+    margin-top: 10px;
+}
+
+.content-footer-2 {
+    color: var(--dark-gray);
+    font-style: italic;
+    border: 2px dashed var(--orange);
+    text-align: right;
+}
+
+.content-footer-3 {
+    color: var(--dark-gray);
+    font-weight: bold;
+    border: 2px dotted var(--gray);
+    text-align: center;
+}
+
+.content-about {
+    margin-top: 50px;
+    font-style: italic;
+    color: var(--purple);
+    font-size: 18px;
+    line-height: 1.1;
+}
